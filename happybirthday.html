@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAPPY BIRTHDAY</title>
+    <link rel="stylesheet" href="happybirthday.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Roboto:ital,wght@0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Meie+Script&family=Roboto:ital,wght@0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="myAudio" controls autoplay style="display: none">
+      <source src="song.mp4" />
+    </audio>
+
+    <div class="glowing" style="text-align: center; padding-top: 50px">
+      <span>H</span>
+      <span>A</span>
+      <span>P</span>
+      <span>P</span>
+      <span>Y</span>
+      <span>B</span>
+      <span>I</span>
+      <span>R</span>
+      <span>T</span>
+      <span>H</span>
+      <span>D</span>
+      <span>A</span>
+      <span>Y</span>
+    </div>
+    <h2>YOU DID IT!!!</h2>
+    <h3>CONGRATULATIONS</h3>
+    <div>
+      <p
+        style="
+          margin-top: 0;
+          font-size: 22px;
+          text-align: center;
+          margin-left: 25vw;
+          margin-right: 25vw;
+        "
+        class="text"
+      >
+        Chúc mừng sinh nhật nha : D Hóa ra the Evil Blobfish không muốn phá hủy
+        sinh nhật cậu mà đây là một món quà nè (and a special video tmr too) : O
+      </p>
+      <script>
+        var audio = document.getElementById("myAudio");
+        audio.addEventListener("ended", function () {
+          audio.currentTime = 0;
+          audio.play();
+        });
+      </script>
+    </div>
+  </body>
+</html>

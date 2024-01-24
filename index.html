@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SECRET</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="input-box">
+        <input
+          id="myInput"
+          type="text"
+          placeholder="Password"
+          onkeypress="checkPassword(event)"
+        />
+      </div>
+      <div class="hint">hint: 8 letters</div>
+    </div>
+
+    <script>
+      function checkPassword(event) {
+        var input = document.getElementById("myInput").value;
+        if (input.length === 8 && (event.key === "Enter" || event.keyCode === 13)) {
+          if (input === "toyeucau") {
+            alert("THE PASSWORD IS CORRECT");
+            window.location.replace("happybirthday.html");
+          } else {
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
